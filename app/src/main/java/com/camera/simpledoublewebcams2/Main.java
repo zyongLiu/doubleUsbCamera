@@ -15,6 +15,7 @@ public class Main extends Activity {
 		setContentView(R.layout.main);
 		try {
 			Runtime.getRuntime().exec("su -c chmod 777 /dev/video0");
+			Runtime.getRuntime().exec("su -c chmod 777 /dev/video1");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
